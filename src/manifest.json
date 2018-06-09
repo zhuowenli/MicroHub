@@ -1,0 +1,34 @@
+{
+    "manifest_version": 2,
+    "name": "MicroHub",
+    "description": "Github Theme",
+    "version": "1.0.0",
+    "icons": {
+        "16": "assets/icon.png",
+        "48": "assets/icon.png",
+        "128": "assets/icon.png"
+    },
+    "content_scripts": [
+        {
+            "matches": ["*://github.com/*"],
+            "js": [
+                "jquery.js",
+                "microhub.js"
+            ],
+            "all_frames": true
+        }
+    ],
+    "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'none'",
+    "permissions": [
+        "http://github.com/",
+        "https://github.com/",
+        "webRequestBlocking",
+        "alarms",
+        "notifications",
+        "storage",
+        "activeTab",
+        "cookies",
+        "webNavigation",
+        "tabs"
+    ]
+}
