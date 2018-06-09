@@ -42,7 +42,8 @@ rules:
   space-before-function-paren: 0
   prefer-destructuring: 0
   prefer-promise-reject-errors: 0
-  import/no-unresolved: [0, {commonjs: true, amd: true}]
+  import/no-unresolved: [2, {commonjs: true, amd: true}]
   import/no-extraneous-dependencies: 0
   import/no-absolute-path: 0
   import/prefer-default-export: 0
+

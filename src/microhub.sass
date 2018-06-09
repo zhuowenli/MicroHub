@@ -4,9 +4,127 @@
  * @Date: 2018-06-09 12:03:07
  */
 
-.microhub
-    color: #ffffff
+body
+    background: #e1e1e1 !important
+    padding: 76px 0 43px
+
+    .application-main
+        max-width: 1080px
+        padding-bottom: 20px
+        margin: 0 auto
+        background: #ffffff
+        border: 1px solid #ababab
 
     .Header
+        position: fixed
+        top: 0
+        left: 0
+        right: 0
         background: #2b579a
+        z-index: 100;
+        .container-lg
+            max-width: 100%
+
+        .header-search-key-slash
+            width: 19px
+            height: 0
+            padding-top: 20px
+            background: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTkiIGhlaWdodD0iMjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPgogIDxkZWZzPgogICAgPHJlY3QgaWQ9ImEiIHdpZHRoPSIxOSIgaGVpZ2h0PSIyMCIgcng9IjMiLz4KICA8L2RlZnM+CiAgPGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj4KICAgIDx1c2UgZmlsbD0iIzJiNTc5YSIgeGxpbms6aHJlZj0iI2EiLz4KICAgIDxyZWN0IHN0cm9rZT0iI2NjY2NjYyIgeD0iLjUiIHk9Ii41IiB3aWR0aD0iMTgiIGhlaWdodD0iMTkiIHJ4PSIzIi8+CiAgICA8cGF0aCBmaWxsPSIjZmZmZmZmIiBkPSJNMTEuNzYgNS45NzlsLTMuOCA5LjA3OWgtLjkxbDMuNzgtOS4wOHoiLz4KICA8L2c+Cjwvc3ZnPgo=') no-repeat
+
+    .footer
+        position: fixed
+        bottom: 0
+        left: 0
+        right: 0
+        height: 23px
+        max-width: 100%
+        background: #ffffff
+        border-top: 1px solid #bec1c4
+        padding: 0 8px !important
+        & > div
+            margin: 0 !important
+            padding: 0 !important
+
+        ul
+            &:first-child
+                padding-left: 24px
+            li
+                margin-right: 0 !important
+                margin: 0 4px
+                height: 22px
+                line-height: 22px
+
+        a
+            display: inline-block
+            padding: 0 4px
+            color: #444444
+            &:hover
+                color: #444444
+                background: #d5e1f2
+                text-decoration: none
+
+        .footer-octicon
+            position: absolute
+            left: 0
+            top: 0
+            padding: 2px 4px
+            .octicon
+                width: 18px
+                height: 18px
+
+
+.clippy
+    position: fixed;
+    z-index: 1000;
+    cursor: pointer;
+
+    &-balloon
+        position: fixed;
+        z-index: 1000;
+        cursor: pointer;
+        background: #FFC;
+        color: black;
+        padding: 8px;
+        border: 1px solid black;
+        border-radius: 5px;
+
+    &-content
+        max-width: 200px;
+        min-width: 120px;
+        font-family: "Microsoft Sans", sans-serif;
+        font-size: 10pt;
+
+    &-tip
+        width: 10px;
+        height: 16px;
+        background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAgCAMAAAAlvKiEAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAAlQTFRF///MAAAA////52QwgAAAAAN0Uk5T//8A18oNQQAAAGxJREFUeNqs0kEOwCAIRFHn3//QTUU6xMyyxii+jQosrTPkyPEM6IN3FtzIRk1U4dFeKWQiH6pRRowMVKEmvronEynkwj0uZJgR22+YLopPSo9P34wJSamLSU7lSIWLJU7NkNomNlhqxUeAAQC+TQLZyEuJBwAAAABJRU5ErkJggg==) no-repeat;
+        position: absolute;
+
+    &-top-left .clippy-tip
+        top: 100%;
+        margin-top: 0px;
+        left: 100%;
+        margin-left: -50px;
+
+    &-top-right .clippy-tip
+        top: 100%;
+        margin-top: 0px;
+        left: 0;
+        margin-left: 50px;
+        background-position: -10px 0;
+
+    &-bottom-right .clippy-tip
+        top: 0;
+        margin-top: -16px;
+        left: 0;
+        margin-left: 50px;
+        background-position: -10px -16px;
+
+    &-bottom-left .clippy-tip
+        top: 0;
+        margin-top: -16px;
+        left: 100%;
+        margin-left: -50px;
+        background-position: 0px -16px;
+
 
