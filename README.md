@@ -4,6 +4,6 @@
 
 A Microsoft Github Theme
 
-![](./static/1280-1.png)
+![](./static/profile.png)
 ![](./static/microhub.png)
 
