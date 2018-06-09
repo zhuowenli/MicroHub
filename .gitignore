@@ -62,4 +62,6 @@ typings/
 
 dist
 package-lock.json
+*.pem
+*.crx
 
