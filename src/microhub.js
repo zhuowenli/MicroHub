@@ -21,7 +21,10 @@ const COLOR = {
 window.clippy.load('Clippy', (agent) => {
     agent.show();
     agent.animate();
-    agent.speak('Whoops, it looks like you have some merge conflicts!');
+
+    setTimeout(() => {
+        agent.speak('Whoops, it looks like you have some merge conflicts!');
+    }, 1500);
 });
 
 $body.addClass('microhub');
