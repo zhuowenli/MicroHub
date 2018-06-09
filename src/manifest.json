@@ -2,7 +2,7 @@
     "manifest_version": 2,
     "name": "MicroHub",
     "description": "Microsoft Github Theme",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "icons": {
         "16": "assets/icon.png",
         "48": "assets/icon.png",
