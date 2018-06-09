@@ -8,6 +8,9 @@
         "48": "assets/icon.png",
         "128": "assets/icon.png"
     },
+    "browser_action": {
+        "default_icon": "assets/icon.png"
+    },
     "content_scripts": [
         {
             "matches": ["*://github.com/*"],
