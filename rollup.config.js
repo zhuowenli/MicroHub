@@ -6,24 +6,14 @@
 
 
 import babel from 'rollup-plugin-babel';
-import resolve from 'rollup-plugin-node-resolve';
-import commonjs from 'rollup-plugin-commonjs';
 import copy from 'rollup-plugin-copy-assets';
 import postcss from 'rollup-plugin-postcss';
 import sourcemaps from 'rollup-plugin-sourcemaps';
 import { uglify } from 'rollup-plugin-uglify';
-import imageBase64 from 'rollup-plugin-image-base64';
 
 console.log('isDev:', process.env.NODE_ENV === 'development');
 
 const plugins = [
-    resolve(),
-    commonjs(),
-    imageBase64(),
-    postcss({
-        extract: true,
-        use: ['sass'],
-    }),
     babel({
         exclude: 'node_modules/**',
         externalHelpers: false,
@@ -51,7 +41,13 @@ export default [
             include: 'src/**'
         },
         external: ['jquery'],
-        plugins,
+        plugins: [
+            postcss({
+                extract: true,
+                use: ['sass'],
+            }),
+            ...plugins,
+        ],
     },
     {
         input: 'src/clippy.js',

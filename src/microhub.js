@@ -4,7 +4,7 @@
  * @Date: 2018-06-09 12:01:15
  */
 
-import 'metro4';
+// import 'metro4';
 // import clippy from './clippy';
 import './microhub.sass';
 
